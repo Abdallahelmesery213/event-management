@@ -962,7 +962,10 @@ footer form .btn{
         background-position: left;
     }
     .banner.bannerRight .banner-text .line , .banner.bannerLeft .banner-text .line {
-        width: 100%;
+        display: none;
+    }
+    .banner .banner-text h6{
+        text-align: center;
     }
     /* end banners */
     /* start section2 */
