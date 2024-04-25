@@ -637,129 +637,67 @@ header .nav3 ul li:not(:last-child)::after {
 /* end sponsor */
 
 /* start footer */
-footer .footer1{
-    background-color: #000;
-    border-bottom: 15px solid #b6b6b6;
-    min-height: 180px;
-    display: flex;
-    align-items: center;
-    margin-top: 50px;
+footer{
+    padding: 50px 0 0;
+    background-color: rgba(240,240,241,255);
+    margin-top: 30px;
 }
-footer .footer1 .btn{
-    display: none !important;
-    background-color: #000;
-    color: #b1b1b1;
-    font-size: 16px;
-    border-color: #4e4e4e;
-    border-radius: 0;
+footer .logo img {
+    margin-top: -12%;
     width: 85%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
 }
-footer .footer1 p{
-    color: #b1b1b1;
+footer .logo span{
+    font-family: boldFont;
 }
-footer .footer1 .social h5{
+footer h5{
+    color: #023ca7;
     font-size: 17px;
-    color: #b1b1b1;
-}
-footer .footer1 .social{
-    margin: 0 auto;
-    text-align: center;
-}
-footer .footer1 .social ul li{
-    width: 30px;
-    height: 35px;
-    cursor: pointer;
-}
-footer .footer2{
-    background-color: #fff;
-    padding-bottom: 30px;
-}
-footer .footer2 .logo{
-    text-align: center;
-    position: relative;
-    left: -25%;
-}
-footer .footer2 .logo img{
-    width: 80%;
-}
-footer .footer2 .logo h5{
-    color: #f9f9f9;
-    font-family: auto;
-    font-size: 33px;
-    margin-top: 20px;
-}
-footer .footer2 .links {
-    margin-top: 5%;
-    padding-top: 5%;
-    padding-right: 10px;
-    border-right: 1px solid #000;
-}
-footer .footer2 .links h5{
-    color: #ab00d0;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-footer .footer2 .links p, footer .footer2 .links p a{
-    color: #000;
-    cursor: pointer;
-    margin-bottom: 5px;
-    font-size: 17px;
-    text-decoration: none;
-}
-footer .footer2 .apps{
-    padding-top: 10%;
-    padding-left: 10px;
-}
-footer .footer2 .apps h4{
-    color: #000;
-    text-align: center;
-    font-size: 22px;
-    line-height: 30px;
-}
-footer .footer2 .apps .line{
-    border-bottom: 1px solid #000;
-    margin: 15px 0;
-}
-footer .footer2 .apps h5,
-footer .footer2 .apps h5 a{
-    text-decoration: none;
-    color: #000;
     font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+footer form button.btn{
+    display: flex;
+    padding: 5px 10px;
+    background-color: #023ca7;
+}
+footer .links span{
+    color: #000;
+    font-size: 14px;
+    cursor: pointer;
+    margin-bottom: 7px;
+}
+footer .links span:hover{
+    color: rgb(4, 31, 44);
+    font-weight: 700;
+}
+footer .subscribe-label{
+    color: #023ca7;
     font-size: 17px;
-    line-height: 30px;
-    margin-bottom: 30px;
+    font-weight: bold;
+}
+footer p.footr{
+    font-size: 15px;
+    margin-top: 10px;
+}
+footer .copy-right{
+    background-color: #023ca7;
+    color: #fff;
+}
+footer .copy-right p{
+    font-size: 15px;
+    margin: auto;
+    padding: 15px 0;
     text-align: center;
 }
-footer .footer2 .apps h5 a{
-    color: #ab00d0;
+footer form input, footer form .btn, footer .icon-download img{
+    height: 35px;
 }
-footer .footer2 .apps .btn.btn-dark{
-    display: none !important;
-    background-color: #282828;
-    border-color: #4e4e4e;
-    border-radius: 0;
-    color: #b1b1b1;
-    width: 55%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 30px 0;
+footer .icon-download img{
+    height: 43px;
 }
-footer .footer2 .apps ul li{
-    width: 45%;
-}
-footer .footer3 {
-    background-color: #ab00d0;
-    padding: 15px 0;
-}
-footer .footer3 ul li a{
-    text-decoration: none;
-    font-size: 12px;
-    color: #757575;
+footer form .btn{
+    font-size: 15px;
 }
 /* end footer */
 
@@ -911,12 +849,6 @@ footer .footer3 ul li a{
         font-size: 18px;
         width: 100%;
     }
-    footer .footer2 .links h5 {
-        font-size: 17px;
-    }
-    footer .footer2 .links p{
-        font-size: 15px;
-    }
 }
 @media only screen and (max-width: 991px) {
     .counter h2 {
@@ -934,27 +866,6 @@ footer .footer3 ul li a{
         line-height: 17px;
         /* width: 75%; */
     }
-    footer .footer2 .logo{
-        left: 0;
-    }
-    footer .footer2 .logo h5 {
-        font-size: 25px;
-    }
-    footer .footer2 .links h5{
-        font-size: 12px;
-    }
-    footer .footer2 .links p {
-        font-size: 12px;
-        margin-bottom: 5px;
-    }
-    footer .footer2 .apps h4, footer .footer2 .apps h5 {
-        font-size: 16px;
-        line-height: 22px;
-    }
-    footer .footer2 .apps .btn.btn-dark {
-        width: 90%;
-    }
-
 }
 @media only screen and (max-width: 1109px) {
     .counter-top .btns {
@@ -1088,31 +999,7 @@ footer .footer3 ul li a{
         width: 80%;
         margin: 30px auto 0;
     }
-    footer .footer1 {
-        text-align: center;
-        padding: 20px 0;
-    }
-    footer .footer1 .btn{
-        margin: 20px auto;
-    }
-    footer .footer2 .links h5 {
-        font-size: 16px;
-    }
-    footer .footer2 .links p {
-        font-size: 14px;
-    }
-    footer .footer2 .links{
-        border-right: 0;
-    }
-    footer .footer2 .apps h4 br, footer .footer2 .apps h5 {
-        display: none;
-    }
-    footer .footer2 .apps h4, footer .footer2 .apps h5 {
-        text-align: center;
-    }
-    footer .footer2 .logo h5 br {
-        display: none;
-    }
+   
     /* start .agenda-screen */
     .agenda-screen .photo-gallery h4{
         font-size: 20px;
@@ -1132,7 +1019,19 @@ footer .footer3 ul li a{
         font-size: 16px;
     }
    
-
+    footer .logo{
+        margin-bottom: 20px;
+        text-align: center;
+        width: 90%;
+    }
+    footer .icon-download, footer .social{
+        justify-content: center;
+        margin: 5px 0;
+    }
+    footer form button.btn{
+        display: flex;
+        padding: 5px 10px;
+    }
 }
 @media only screen and (max-width: 575px) {
     .nav2, .nav3{
@@ -1164,13 +1063,15 @@ footer .footer3 ul li a{
         margin: auto;
         text-align: center;
     }
-    footer .footer3 ul li{
-        width: 42%;
+    footer h5 {
+        font-size: 15px;
     }
-    footer .footer2 .logo h5 {
-        font-size: 20px;
+    footer .links span {
+        font-size: 13px;
     }
-    
+    footer .copy-right p {
+        font-size: 13px;
+    }
 }
 @media only screen and (max-width: 505px) {
     header .right-part .nav1 .dropdowns {
