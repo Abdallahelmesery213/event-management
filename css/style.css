@@ -245,6 +245,7 @@ header .nav3 ul li:not(:last-child)::after {
     margin-left: 5%;
 }
 
+.banner.bannerRight .banner-text h3,
 .banner.bannerRight .banner-text p{
     margin-left: auto !important;
 }
@@ -253,6 +254,7 @@ header .nav3 ul li:not(:last-child)::after {
     font-family: qatarBoldFont;
     color: #000;
     font-size: 35px;
+    width: 85%;
     line-height: 40px;
     margin-bottom: 20px;
 }
