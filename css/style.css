@@ -113,8 +113,8 @@ header .nav2 ul li:not(:last-child)::after {
 header .right-part .nav2 a{
     text-decoration: none;
     color: #fff;
-    font-size: 14px;
-    font-family: bruumBoldFont;
+    /* font-size: 14px; */
+    font-family: bruumLightFont;
     margin-right: 16px;
 }
 header .right-part .nav3{
@@ -128,8 +128,9 @@ header .right-part .nav3{
 header .right-part .nav3 a{
     text-decoration: none;
     color: #000;
-    font-size: 14px;
-    font-family: bruumBoldFont;
+    /* font-size: 14px; */
+    font-family: bruumLightFont;
+    /* font-weight: 600; */
     margin-right: 16px;
 }
 header .nav3 ul li{
