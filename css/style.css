@@ -163,7 +163,7 @@ header .nav3 ul li:not(:last-child)::after {
 .counter-top .btn{
     min-height: 35px;
     color: #f1efef;
-    background-color: #ab00d0;
+    background-color: #1b75bb;
     border: none;
     width: 75%;
     display: flex;
