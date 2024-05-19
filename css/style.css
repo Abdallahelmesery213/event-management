@@ -1,4 +1,4 @@
-@font-face{
+﻿@font-face{
     font-family: bruumBoldFont;
     src: url(https://datamatixgroup.com/asset/fonts/Bruum\ FY\ Bold.otf);
 }
@@ -12,15 +12,15 @@
 }
 @font-face{
     font-family: newJuneBoldFont;
-    src: url(./../fonts/NewJune-Bold.otf);
+    src: url(../fonts/NewJune-Bold.otf);
 }
 @font-face{
     font-family: qatarBoldFont;
-    src: url(./../fonts/Qatar2022Arabic-Bold.ttf);
+    src: url(../fonts/Qatar2022Arabic-Bold.ttf);
 }
 @font-face{
     font-family: newJuneMedFont;
-    src: url(./../fonts/NewJune-Medium.otf);
+    src: url(../fonts/NewJune-Medium.otf);
 }
 @font-face{
     font-family: acuminFont;
@@ -99,7 +99,7 @@ header .right-part .nav2{
 header .nav2 ul li{
     position: relative;
     cursor: pointer;
-    
+
 }
 header .nav2 ul li:not(:last-child)::after {
     display: none;
@@ -282,37 +282,37 @@ header .nav3 ul li:not(:last-child)::after {
     /* width: 70%; */
 }
 .banner-1{
-    background-image: url(./../images/img_2-04.jpg);
+    background-image: url(../images/img_2-04.jpg);
 }
 .banner-2{
-    background-image: url(./../images/img_22-02.jpg);
+    background-image: url(../images/img_22-02.jpg);
 }
 .banner-3{
-    background-image: url(./../images/img_4-04-04.jpg);
+    background-image: url(../images/img_4-04-04.jpg);
 }
 .banner-4{
-    background-image: url(./../images/img_03-04.jpg);
+    background-image: url(../images/img_03-04.jpg);
 }
 .banner-5{
-    background-image: url(./../images/img_5-03.jpg);
+    background-image: url(../images/img_5-03.jpg);
 }
 .banner-6{
-    background-image: url(./../images/img_6-03.jpg);
+    background-image: url(../images/img_6-03.jpg);
 }
 .banner-7{
-    background-image: url(./../images/img_7-03.jpg);
+    background-image: url(../images/img_7-03.jpg);
 }
 .banner-8{
-    background-image: url(./../images/img_8-03.jpg);
+    background-image: url(../images/img_8-03.jpg);
 }
 .banner-9{
-    background-image: url(./../images/img_9-03.jpg);
+    background-image: url(../images/img_9-03.jpg);
 }
 .banner-10{
-    background-image: url(./../images/img_10-03.jpg);
+    background-image: url(../images/img_10-03.jpg);
 }
 .banner-11{
-    background-image: url(./../images/img_11-03.jpg);
+    background-image: url(../images/img_11-03.jpg);
 }
 /* end banners */
 
@@ -839,7 +839,7 @@ footer form .btn{
 }
 @media only screen and (max-width: 1284px) {
     .banner_1 .banner-footer ul{
-       
+
         transform: translateY(10px);
     }
     .banner_1 .banner-footer p{
@@ -1005,7 +1005,7 @@ footer form .btn{
         width: 80%;
         margin: 30px auto 0;
     }
-   
+
     /* start .agenda-screen */
     .agenda-screen .photo-gallery h4{
         font-size: 20px;
@@ -1024,7 +1024,7 @@ footer form .btn{
     .event-agenda h5{
         font-size: 16px;
     }
-   
+
     footer .logo{
         margin-bottom: 20px;
         text-align: center;
@@ -1089,5 +1089,12 @@ footer form .btn{
         font-size: 14px;
     }
 }
-
+.contact-text{
+  padding: 30px;
+  margin: 20px 0;
+  background-color: #f1f1f2;
+}
+.contact-form select ,.contact-form input{
+  margin-bottom: 20px;
+}
 /* end media query */
