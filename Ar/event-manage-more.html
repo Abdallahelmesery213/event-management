@@ -1,18 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="ar">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Photo Gallery</title>
-    <!-- <link rel="stylesheet" href="https://datamatixgroup.com/asset/fonts/remixicon.css" /> -->
+    <title>Event Management More</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script defer="" src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="js/history7.js"></script>
     <link rel="stylesheet" href="css/style.css">
   </head>
+  <style>
+    strong{
+      font-family: bruumBoldFont;
+      color: #000;
+      font-size: 18px;
+    }
+    h3{
+      margin: 30px 0;
+    }
+   .congress h4{
+    font-family: bruumBoldFont;
+    font-size: 20px;
+    margin-top: 20px;
+    }
+    .congress ul{
+      margin-top: 15px;
+    }
+    .congress h3{
+      color: #000;
+    font-family: bruumBoldFont;}
+    .congress p , .congress span {
+      font-family: bruumLightFont;
+      font-size: 18px;
+    }
+    .congress p strong{
+      font-family: bruumBoldFont;
+      color: #000;
+      font-size: 18px;
+    }
+    .congress ul li{
+      font-family: bruumLightFont;
+      margin-bottom: 7px;
+      font-size: 18px;
+    }
+    .congress p a {
+      color: #164ccb !important;
+    }
+  </style>
   <body>
-    <div class="home-screen">
-      <!-- start header -->
+
+    <div class="welcome-screen">
+        <!-- start header -->
       <header>
         <div class="container-fluid">
           <div class="row">
@@ -96,213 +134,123 @@
 
         </div>
       </header>
-
       <!-- end header -->
 
-      <!-- start winner sliders -->
-       <!-- <div class="winner-slider">
-        <div id="winnerSliders" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./images/main-banner1.jpg" class="d-block w-100" alt="img" />
-            </div>
-            <div class="carousel-item">
-              <img src="./images/main-baner2.jpg" class="d-block w-100" alt="img2" />
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#winnerSliders" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#winnerSliders" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+        <!-- start banner_main -->
+        <div class="main-banner">
+            <img src="images/img_1-03-05.jpg" class="img-fluid w-100" alt="banner">
         </div>
-      </div> -->
-      <!-- end winner sliders -->
+      <!-- end banner_main-->
 
-      <!-- start banner_main -->
-      <div class="main-banner">
-        <img src="images/img_1-03-05.jpg" class="img-fluid w-100" alt="banner">
-    </div>
-  <!-- end banner_main-->
-
-  <div class="counter-top">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-8 col-md-7 col-12 m-auto">
-            <!-- <p>Woibex Established Since: March 8, 1996 27 years 8 months 18 days 20 hours 32 minutes 23 seconds</p> -->
-            <div id="timetext">
-                <p class="timetext">
-                  The Institute Established Since: May 13, 1989 &nbsp;&nbsp;<span id="counter">00:00:00:</span>
-                </p>
+        <div class="counter-top">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-9 col-12 m-auto">
+                <div id="timetext">
+                    <p class="timetext">
+                      Datamatix Established Since: May 13, 1989 &nbsp;&nbsp;<span id="counter">00:00:00:</span>
+                    </p>
+                </div>
+                    </div>
+                    <div class="col-md-3 col-12">
+                        <button class="btn btn-primary">
+                            <img src="images/gallery-icon.png" class="img-fluid me-2" alt="icon">
+                            <a href="photo-gallery.html"> PHOTO GALLERY </a>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-3 col-12">
-          <button class="btn btn-primary">
-              <img src="images/gallery-icon.png" class="img-fluid me-2" alt="icon">
-              <a href="photo-gallery.html"> PHOTO GALLERY </a>
-          </button>
-      </div>
-      </div>
-    </div>
-  </div>
 
-      <!-- start Counter -->
-      <div class="counter">
+        <!-- start Counter -->
+        <div class="counter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2 col-6">
+                        <div class="counter-desc text-center">
+                            <!-- <i class="ri-calendar-check-line"></i> -->
+                            <img src="2018Home/img/BusinessYears.png" alt="icon" class="img-fluid">
+                            <h2>27+</h2>
+                            <p>Years in Business</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="counter-desc text-center">
+                            <!-- <i class="ri-star-s-line"></i> -->
+                            <img src="2018Home/img/SuccessfulEvents.png" alt="icon" class="img-fluid">
+                            <h2>1250+</h2>
+                            <p>Successful Events</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="counter-desc text-center">
+                            <!-- <i class="ri-emotion-laugh-line"></i> -->
+                            <img src="2018Home/img/SatisfiedClients.png" alt="icon" class="img-fluid">
+                            <h2>175000+</h2>
+                            <p>Satisfied Clients</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="counter-desc text-center">
+                            <!-- <i class="ri-play-circle-line"></i> -->
+                            <img src="2018Home/img/MediaPartners.png" alt="icon" class="img-fluid">
+                            <h2>340+</h2>
+                            <p>Media Partners</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="counter-desc text-center">
+                            <!-- <i class="ri-star-s-fill"></i> -->
+                            <img src="2018Home/img/PlatinumPartners.png" alt="icon" class="img-fluid">
+                            <h2>275+</h2>
+                            <p>Platinum Partners</p>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-6">
+                        <div class="counter-desc text-center">
+                            <!-- <i class="ri-shake-hands-line"></i> -->
+                            <img src="2018Home/img/SatisfiedPartners.png" alt="icon" class="img-fluid">
+                            <h2>180+</h2>
+                            <p>Other Supporters</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end Counter -->
+
         <div class="container">
-          <div class="row">
-            <div class="col-md-2 col-6">
-              <div class="counter-desc text-center">
-                <!-- <i class="ri-calendar-check-line"></i> -->
-                <img src="2018Home/img/BusinessYears.png" alt="icon" class="img-fluid">
-                <h2>27+</h2>
-                <p>Years in Business</p>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="counter-desc text-center">
-                <!-- <i class="ri-star-s-line"></i> -->
-                <img src="2018Home/img/SuccessfulEvents.png" alt="icon" class="img-fluid">
-                <h2>1250+</h2>
-                <p>Successful Events</p>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="counter-desc text-center">
-                <!-- <i class="ri-emotion-laugh-line"></i> -->
-                <img src="2018Home/img/SatisfiedClients.png" alt="icon" class="img-fluid">
-                <h2>175000+</h2>
-                <p>Satisfied Clients</p>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="counter-desc text-center">
-                <!-- <i class="ri-play-circle-line"></i> -->
-                <img src="2018Home/img/MediaPartners.png" alt="icon" class="img-fluid">
-                <h2>340+</h2>
-                <p>Media Partners</p>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="counter-desc text-center">
-                <!-- <i class="ri-star-s-fill"></i> -->
-                <img src="2018Home/img/PlatinumPartners.png" alt="icon" class="img-fluid">
-                <h2>275+</h2>
-                <p>Platinum Partners</p>
-              </div>
-            </div>
-            <div class="col-md-2 col-6">
-              <div class="counter-desc text-center">
-                <!-- <i class="ri-shake-hands-line"></i> -->
-                <img src="2018Home/img/SatisfiedPartners.png" alt="icon" class="img-fluid">
-                <h2>180+</h2>
-                <p>Other Supporters</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- end Counter -->
+          <div class="congress">
+            
+          <h3 class="text-center mb-4">Datamatix Events Management Services</h3>
+         
+          <p>
+            With great pleasure, we would like to take this opportunity to express our sincere appreciation for your organization’s efforts in supporting regional and global events. Your professionalism, commitment to quality, and pursuit of excellence have significantly contributed to the advancement of regional events and exhibitions industries and the development of quality, resulting in a remarkable transformation towards achieving the highest standards of excellence in events.
+          </p>
 
-      <!-- start photo-gallery -->
-      <div class="photo-gallery">
-        <div class="container">
-            <h4>Awards History Magazine</h4>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="gallery">
-                        <img src="images/gallery-1.png" class="img-fluid" alt="gallery">
-                    </div>
-                    <h5>
-                        H.E Sheikha Lubna Al Qasimi <br>
-                        UAE Minister of Foreign Trade
-                    </h5>
-                </div>
-                <div class="col-md-4">
-                    <div class="gallery">
-                        <img src="images/gallery-2.png" class="img-fluid" alt="gallery">
-                    </div>
-                    <h5>
-                        H.E Sheikha Bodour Bint Sultan Al Qasimi <br>
-                        UAE Minister of Foreign Trade
-                    </h5>
-                </div>
-                <div class="col-md-4">
-                    <div class="gallery">
-                        <img src="images/gallery-3.png" class="img-fluid" alt="gallery">
-                    </div>
-                    <h5>
-                        Dr Raja Al Gurg <br>
-                        Chairperson - Easa Saleh Al Gurg Group and Founder - Dubai Business Women's Council
-                    </h5>
-                </div>
-                <div class="col-md-4">
-                    <div class="gallery">
-                        <img src="images/gallery-4.png" class="img-fluid" alt="gallery">
-                    </div>
-                    <h5>
-                        The awards Winners <br> Suoad Karam
-                    </h5>
-                </div>
-                <div class="col-md-4">
-                    <div class="gallery">
-                        <img src="images/gallery-5.png" class="img-fluid" alt="gallery">
-                    </div>
-                    <h5>
-                        Women Leaders <br> Conference attendance
-                    </h5>
-                </div>
-                <div class="col-md-4">
-                    <div class="gallery">
-                        <img src="images/gallery-6.png" class="img-fluid" alt="gallery">
-                    </div>
-                    <h5>
-                        The awards Winners <br> Rasha Al Shebeli
-                    </h5>
-                </div>
-                <!-- <div class="col-md-4">
-                    <div class="gallery">
-                        <img src="./images/gallery-7.png" class="img-fluid" alt="gallery">
-                    </div>
-                    <h5>
-                        The awards Winners <br> Suoad Karam
-                    </h5>
-                </div> -->
-                <div class="col-md-4">
-                    <div class="gallery">
-                        <img src="images/gallery-8.png" class="img-fluid" alt="gallery">
-                    </div>
-                    <h5>
-                        Women Leaders <br> Conference attendance
-                    </h5>
-                </div>
-                <div class="col-md-4">
-                    <div class="gallery">
-                        <img src="images/gallery-9.png" class="img-fluid" alt="gallery">
-                    </div>
-                    <h5>
-                        The awards Winners <br> Rasha Al Shebeli
-                    </h5>
-                </div>
-            </div>
-        </div>
-      </div>
-      <!-- end photo-gallery -->
+          
+          <p>
+            As a prominent leader in the events management services industry for over 35 years, Datamatix takes immense pride in offering unparalleled services to government and business corporations, global institutions, leaders, and professionals across various sectors. Our commitment to excellence, innovation, and knowledge development has earned Datamatix a strong global reputation. 
+          </p>
 
-      <!-- start banner-bootom -->
-      <div class="banner-bottom">
-        <div class="container">
-          <div class="img">
-            <img src="images/banner-bottom.jpg" class="img-fluid w-100" alt="banner">
+          <p>
+            Datamatix offers a comprehensive events solution, empowering your success with confidence, reaching your target audience, expanding business opportunities, and leaving a lasting impact on your attendees and stakeholders through our seamless event execution. Datamatix, with over 1500 successful events, has attracted regional and global corporates, leaders and industry experts, fostering knowledge exchange and business development. 
+          </p>
+
+          <p>
+            Datamatix events management services include conferences, seminars, workshops, product launches, media relations, and more, from conceptualization to execution. We leave no stone unturned in crafting flawless events that align seamlessly with your organizational goals and needs in the regional and global markets.
+          </p>
+
+          <p>
+            The Datamatix team of professionals takes the time to understand your unique requirements, and with an eye for detail, we curate events that surpass expectations and industry standards. Elevate your organization to new heights with our expertise and dedication, attracting global leaders, government authorities, and industry experts. In addition to our expertise in event management, we are also at the forefront of embracing emerging technologies such as CRM, ERP, corporate web development and more to deliver outstanding event experiences that cater to modern audiences.
+          </p>
+
+ 
           </div>
         </div>
-      </div>
-      <!-- end banner-bootom -->
 
-      <!-- start footer -->
-      <footer>
+        <!-- start footer -->
+       <footer>
         <div class="container">
             <div class="row mb-2">
                 <div class="col-md-3 col-12">
@@ -433,6 +381,5 @@
         </div>
     </footer>
     <!-- end footer -->
-    </div>
-  </body>
+    </body>
 </html>

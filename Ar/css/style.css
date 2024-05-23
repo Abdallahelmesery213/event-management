@@ -1,4 +1,8 @@
 @font-face{
+    font-family: bahijSemiBold;
+    src: url(./../fonts/Bahij_TheSansArabic-SemiBold.ttf);
+}
+@font-face{
     font-family: bruumBoldFont;
     src: url(https://datamatixgroup.com/asset/fonts/Bruum\ FY\ Bold.otf);
 }
@@ -12,23 +16,23 @@
 }
 @font-face{
     font-family: newJuneBoldFont;
-    src: url(./../fonts/NewJune-Bold.otf);
+    src: url(../fonts/NewJune-Bold.otf);
+}
+@font-face{
+    font-family: qatarBoldFont;
+    src: url(../fonts/Qatar2022Arabic-Bold.ttf);
 }
 @font-face{
     font-family: newJuneMedFont;
-    src: url(./../fonts/NewJune-Medium.otf);
+    src: url(../fonts/NewJune-Medium.otf);
 }
 @font-face{
     font-family: acuminFont;
     src: url(./../fonts/Acumin\ Pro\ Medium.otf);
 }
-@font-face{
-    font-family: bahijSemiBold;
-    src: url(./../fonts/Bahij_TheSansArabic-SemiBold.ttf);
-}
 
 *{
-    font-family: bahijSemiBold;
+    font-family: bruumLightFont;
     margin: 0;
     padding: 0;
 }
@@ -43,7 +47,6 @@ a{
 /* start header */
 header{
     position: relative;
-    direction: rtl;
     width: 100%;
     min-height: 170px;
 }
@@ -54,11 +57,8 @@ header .left-part{
     background-color: #fff;
 }
 header .right-part{
-    position: relative;
     width: 100%;
-    top: 0;
-    left: 0;
-    min-height: 115px;
+    /* min-height: 115px; */
 }
 header .right-part .nav1{
     display: none;
@@ -71,7 +71,8 @@ header .right-part .nav1 p{
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 0;
-    margin-right: 30px;
+    margin-left: 30px;
+    text-align: center;
 }
 header .right-part .nav1 .langs{
     display: flex;
@@ -91,35 +92,34 @@ header .right-part .nav1 button{
     font-size: 14px;
 }
 header .right-part .nav2{
-    background-color: #0079b5;
+    background-color: #023ca7;
     min-height: 50px;
-    margin-top: 2%;
+    margin-top: 1%;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 20px;
+    padding-left: 20px;
 }
 header .nav2 ul li{
     position: relative;
     cursor: pointer;
-    
+
 }
 header .nav2 ul li:not(:last-child)::after {
     display: none;
     content: "";
     position: absolute;
     width: 2px;
-    height: 22px;
+    height: 18px;
     bottom: 2px;
-    left: 8px;
     background-color: #fff;
 }
 header .right-part .nav2 a{
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 15px;
     font-family: bahijSemiBold;
-    margin-left: 10px;
+    margin-right: 16px;
 }
 header .right-part .nav3{
     background-color: #fff;
@@ -127,34 +127,35 @@ header .right-part .nav3{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-right: 20px;
+    padding-left: 20px;
 }
 header .right-part .nav3 a{
     text-decoration: none;
     color: #000;
-    font-size: 18px;
+    font-size: 15px;
     font-family: bahijSemiBold;
-    margin-left: 10px;
+    /* font-weight: 600; */
+    margin-right: 16px;
 }
 header .nav3 ul li{
     position: relative;
     cursor: pointer;
-    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 header .nav3 ul li:not(:last-child)::after {
     display: none;
     content: "";
     position: absolute;
     width: 2px;
-    height: 22px;
+    height: 18px;
     bottom: 2px;
     background-color: #000;
-    left: 8px;
+    right: 5px;
 }
 /* end header */
 
 .counter-top{
-    background-color: #f1f1f2;
+    background-color: #000;
     padding: 20px 30px;
 }
 .counter-top .btns {
@@ -166,7 +167,7 @@ header .nav3 ul li:not(:last-child)::after {
 .counter-top .btn{
     min-height: 35px;
     color: #f1efef;
-    /* background-color: #1b75bb; */
+    background-color: #1b75bb;
     border: none;
     width: 75%;
     display: flex;
@@ -186,7 +187,7 @@ header .nav3 ul li:not(:last-child)::after {
     font-size: 16px;
     margin-bottom: 0;
     text-align: center;
-    color: #1B75D7;
+    color: #c3c3c3;
 }
 .counter-top button.btn{
     font-size: 14px;
@@ -197,7 +198,7 @@ header .nav3 ul li:not(:last-child)::after {
 }
 .counter h2{
     font-family: bruumBoldFont;
-    color: #0079b5;
+    color: #ee363d;
     font-size: 30px;
     font-weight: bold;
     margin: 5px;
@@ -213,28 +214,21 @@ header .nav3 ul li:not(:last-child)::after {
     color: #888686;
 }
 /* end counter */
-
-/* end counter */
 .main-text h2, .main-text h4{
     text-align: center;
     font-family: bruumBoldFont;
     margin: 40px 0;
 }
 /* start banners */
-
-/* start banners */
 .banner{
     /* border-bottom: 10px solid #3f3f3f; */
     width: 100%;
-    height: 580px;
-    height: 780px;
+    height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     /* margin-bottom: 30px; */
-    /* border-bottom: 5px solid #0079b5; */
-    margin-bottom: 30px;
-    /* border-bottom: 5px solid #0079b5; */
+    /* border-bottom: 5px solid #ab00d0; */
 }
 .banner.bannerLeft{
     background-position: left;
@@ -246,7 +240,7 @@ header .nav3 ul li:not(:last-child)::after {
     /* position: absolute;
     top: 50%;
     transform: translateY(-50%); */
-    margin-top: 15%;
+    margin-top: 25%;
 }
 .banner.bannerRight .banner-text{
     text-align: right;
@@ -256,55 +250,101 @@ header .nav3 ul li:not(:last-child)::after {
     margin-left: 5%;
 }
 
+.banner.bannerRight .banner-text h3,
 .banner.bannerRight .banner-text p{
     margin-left: auto !important;
 }
-
-.banner .banner-text h3{
-    font-family: bruumBoldFont;
-    color: #0079b5;
-    font-size: 30px;
+.banner .banner-text h3,
+.banner .banner-text h3 span{
+    font-family: qatarBoldFont;
+    color: #000;
+    font-size: 35px;
+    width: 85%;
     line-height: 40px;
-    /* margin-bottom: 25px; */
+    margin-bottom: 20px;
+}
+.banner .banner-text h6{
+    color: #898989;
 }
 .banner.bannerRight .banner-text .line{
-    border-bottom: 1px solid #0078b5;
-    width: 100%;
+    border-bottom: 4px solid #ee363d;
+    width: 20%;
     margin-left: auto !important;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .banner.bannerLeft .banner-text .line{
-    border-bottom: 1px solid #0078b5;
-    width: 100%;
+    border-bottom: 4px solid #ee363d;
+    width: 20%;
     margin-right: auto !important;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .banner .banner-text p{
     /* font-family: bruumBoldFont; */
-    font-size: 20px;
+    font-size: 17px;
     /* width: 70%; */
 }
 .banner-1{
-    background-image: url(./../images/bannerAI1.jpg);
+    background-image: url(../images/img_2-04.jpg);
 }
 .banner-2{
-    background-image: url(./../images/bannerAI2.jpg);
+    background-image: url(../images/img_22-02.jpg);
+}
+.banner-2 .banner-text p{
+    font-size: 20px;
+    line-height: 34px;
 }
 .banner-3{
-    background-image: url(./../images/bannerAI3.jpg);
+    background-image: url(../images/img_4-04-04.jpg);
 }
 .banner-4{
-    background-image: url(./../images/bannerAI4.jpg);
+    background-image: url(../images/img_03-04.jpg);
 }
 .banner-5{
-    background-image: url(./../images/bannerAI5.jpg);
+    background-image: url(../images/img_5-03.jpg);
 }
 .banner-6{
-    background-image: url(./../images/bannerAI6.jpg);
+    background-image: url(../images/img_6-03.jpg);
+}
+.banner-7{
+    background-image: url(../images/img_7-03.jpg);
+}
+.banner-8{
+    background-image: url(../images/img_8-03.jpg);
+}
+.banner-9{
+    background-image: url(../images/img_9-03.jpg);
+}
+.banner-10{
+    background-image: url(../images/img_10-03.jpg);
+}
+.banner-11{
+    background-image: url(../images/img_11-03.jpg);
 }
 /* end banners */
+
+/* start arts */
+.arts{
+    margin: 60px 0;
+}
+.arts h3{
+    text-align: center;
+    font-family: bruumBoldFont;
+    margin-bottom: 50px;
+}
+.arts img{
+    width: 100%;
+}
+.arts .col p{
+    color: #6a6262;
+    width: 75%;
+    text-align: left;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/* end arts */
 
 /* start section1 */
 .section1 h2{
@@ -313,11 +353,12 @@ header .nav3 ul li:not(:last-child)::after {
     margin-bottom: 30px;
 }
 .section1 p{
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 32px;
 }
 .section1 p a{
     text-decoration: none;
-    color: #0079b5;
+    color: #ab00d0;
 }
 /* end section1 */
 
@@ -328,15 +369,9 @@ header .nav3 ul li:not(:last-child)::after {
 }
 .section2 h2{
     font-family: bruumBoldFont;
-    color: #0079b5;
+    color: #000;
     font-size: 25px;
-}
-.section2 .section-text, .section2 h2{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
+    line-height: 35px;
 }
 .section2 .section-text{
     display: flex;
@@ -344,6 +379,10 @@ header .nav3 ul li:not(:last-child)::after {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+}
+.section2 .section-text p,
+.section2 .text-section2 p{
+    font-size: 15px;
 }
 .section2 .text-section2{
     display: flex;
@@ -354,6 +393,11 @@ header .nav3 ul li:not(:last-child)::after {
     margin: auto;
     top: 50%;
     transform: translateY(-50%);
+}
+.section2 .section-text{
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
 }
 .section2 .section-text h4{
     font-family: bruumBoldFont;
@@ -423,7 +467,7 @@ header .nav3 ul li:not(:last-child)::after {
 }
 .section3 h4{
     font-family: bruumBoldFont;
-    color: #0079b5;
+    color: #ab00d0;
     margin-bottom: 30px;
 }
 .section3 p{
@@ -442,15 +486,22 @@ header .nav3 ul li:not(:last-child)::after {
 }
 .speakers h4{
     font-family: bruumBoldFont;
-    color: #0079b5;
+    color: #000;
+}
+.speakers p{
     margin-bottom: 30px;
 }
 .speakers .speaker img{
     width: 100%;
     margin-bottom: 10px;
+    border-radius: 25px;
 }
-.speakers .speaker h6{
+.speakers h5{
+    font-weight: bold;
+}
+.speakers p{
     color: #565353;
+    line-height: 24px;
 }
 .speakers .btn-primary{
     display: flex;
@@ -469,8 +520,7 @@ header .nav3 ul li:not(:last-child)::after {
 /* start topics */
 .topics h4{
     font-family: bruumBoldFont;
-    color: #0079b5;
-    margin-bottom: 40px;
+    color: #ab00d0;
     margin-bottom: 25px;
     margin-top: 50px;
     text-align: center;
@@ -495,7 +545,7 @@ header .nav3 ul li:not(:last-child)::after {
 }
 .attends h4{
     font-family: bruumBoldFont;
-    color: #0079b5;
+    color: #ab00d0;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -532,7 +582,7 @@ header .nav3 ul li:not(:last-child)::after {
 }
 .discussions h4{
     font-family: bruumBoldFont;
-    color: #0079b5;
+    color: #ab00d0;
     margin-bottom: 40px;
     text-align: center;
 }
@@ -555,7 +605,7 @@ header .nav3 ul li:not(:last-child)::after {
 }
 .section4 h2{
     font-family: bruumBoldFont;
-    color: #0079b5;
+    color: #ab00d0;
     margin-bottom: 40px;
 }
 .section4 p{
@@ -573,7 +623,7 @@ header .nav3 ul li:not(:last-child)::after {
     padding: 60px 0;
 }
 .sponsor .top2{
-    background-color: #0079b5;
+    background-color: #ab00d0;
     color: #fff;
     padding: 20px 0;
     margin-bottom: 40px;
@@ -597,8 +647,6 @@ header .nav3 ul li:not(:last-child)::after {
 }
 /* end sponsor */
 
-
-
 /* start footer */
 footer{
     padding: 50px 0 0;
@@ -613,7 +661,7 @@ footer .logo span{
     font-family: boldFont;
 }
 footer h5{
-    color: #0079b5;
+    color: #023ca7;
     font-size: 17px;
     font-weight: bold;
     text-transform: uppercase;
@@ -622,6 +670,7 @@ footer h5{
 footer form button.btn{
     display: flex;
     padding: 5px 10px;
+    background-color: #023ca7;
 }
 footer .links span{
     color: #000;
@@ -630,11 +679,11 @@ footer .links span{
     margin-bottom: 7px;
 }
 footer .links span:hover{
-    color: #083f5a;
+    color: rgb(4, 31, 44);
     font-weight: 700;
 }
 footer .subscribe-label{
-    color: #0079b5;
+    color: #023ca7;
     font-size: 17px;
     font-weight: bold;
 }
@@ -643,7 +692,7 @@ footer p.footr{
     margin-top: 10px;
 }
 footer .copy-right{
-    background-color: #0079b5;
+    background-color: #023ca7;
     color: #fff;
 }
 footer .copy-right p{
@@ -760,7 +809,7 @@ footer form .btn{
 }
 .photo-gallery h4{
     font-family: bruumBoldFont;
-    color: #0079b5;
+    color: #ab00d0;
     margin-bottom: 40px;
 }
 .photo-gallery .gallery{
@@ -785,6 +834,7 @@ footer form .btn{
         height: 820px;
     }
 }
+
 @media only screen and (max-width: 1281px) {
     .counter-top p{
         font-size: 14px;
@@ -795,8 +845,22 @@ footer form .btn{
         transform: translateY(-50%);
     }
 }
+@media only screen and (max-width: 1284px) {
+    .banner_1 .banner-footer ul{
 
+        transform: translateY(10px);
+    }
+    .banner_1 .banner-footer p{
+        font-size: 13px;
+    }
+}
 
+@media only screen and (max-width: 1199px) {
+    .datamatix-section p {
+        font-size: 18px;
+        width: 100%;
+    }
+}
 @media only screen and (max-width: 991px) {
     .counter h2 {
         font-size: 24px;
@@ -806,7 +870,7 @@ footer form .btn{
     }
     .banner .banner-text h3 {
         font-size: 18px;
-        line-height: 25px;
+        line-height: 30px;
     }
     .banner .banner-text p {
         font-size: 13px;
@@ -819,7 +883,6 @@ footer form .btn{
         width: 100%;
     }
 }
-
 @media only screen and (max-width: 991px) {
     .counter h2 {
         font-size: 24px;
@@ -828,7 +891,6 @@ footer form .btn{
     header .nav3 ul li:not(:last-child)::after {
         position: relative;
     }
-
 }
 @media only screen and (max-width: 991px) and (min-width: 768px)  {
     footer .icon-download img {
@@ -911,7 +973,10 @@ footer form .btn{
         background-position: left;
     }
     .banner.bannerRight .banner-text .line , .banner.bannerLeft .banner-text .line {
-        width: 100%;
+        display: none;
+    }
+    .banner .banner-text h6{
+        text-align: center;
     }
     /* end banners */
     /* start section2 */
@@ -948,19 +1013,7 @@ footer form .btn{
         width: 80%;
         margin: 30px auto 0;
     }
-    footer .logo{
-        margin-bottom: 20px;
-        text-align: center;
-        width: 90%;
-    }
-    footer .icon-download, footer .social{
-        justify-content: center;
-        margin: 5px 0;
-    }
-    footer form button.btn{
-        display: flex;
-        padding: 5px 10px;
-    }
+
     /* start .agenda-screen */
     .agenda-screen .photo-gallery h4{
         font-size: 20px;
@@ -979,7 +1032,20 @@ footer form .btn{
     .event-agenda h5{
         font-size: 16px;
     }
-   
+
+    footer .logo{
+        margin-bottom: 20px;
+        text-align: center;
+        width: 90%;
+    }
+    footer .icon-download, footer .social{
+        justify-content: center;
+        margin: 5px 0;
+    }
+    footer form button.btn{
+        display: flex;
+        padding: 5px 10px;
+    }
 }
 @media only screen and (max-width: 575px) {
     .nav2, .nav3{
@@ -999,8 +1065,9 @@ footer form .btn{
         margin-top: 5px;
     }
     .banner .banner-text h3 {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 18px !important;
+        line-height: 25px;
+        margin-bottom: 10px;
     }
     .banner .banner-text p {
         font-size: 15px;
@@ -1030,5 +1097,12 @@ footer form .btn{
         font-size: 14px;
     }
 }
-
+.contact-text{
+  padding: 30px;
+  margin: 20px 0;
+  background-color: #f1f1f2;
+}
+.contact-form select ,.contact-form input{
+  margin-bottom: 20px;
+}
 /* end media query */
