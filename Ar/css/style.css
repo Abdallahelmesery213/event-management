@@ -92,6 +92,7 @@ header .right-part .nav1 button{
     font-size: 14px;
 }
 header .right-part .nav2{
+    direction: rtl;
     background-color: #023ca7;
     min-height: 50px;
     margin-top: 1%;
@@ -122,6 +123,7 @@ header .right-part .nav2 a{
     margin-right: 16px;
 }
 header .right-part .nav3{
+    direction: rtl;
     background-color: #fff;
     min-height: 50px;
     display: flex;
