@@ -3,6 +3,10 @@
     src: url(./../fonts/Bahij_TheSansArabic-SemiBold.ttf);
 }
 @font-face{
+    font-family: bahijBold;
+    src: url(./../fonts/Bahij_TheSansArabic-Bold.ttf);
+}
+@font-face{
     font-family: bruumBoldFont;
     src: url(https://datamatixgroup.com/asset/fonts/Bruum\ FY\ Bold.otf);
 }
