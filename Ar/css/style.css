@@ -250,12 +250,19 @@ header .nav3 ul li:not(:last-child)::after {
 }
 .banner.bannerRight .banner-text{
     text-align: right;
-    margin-right: 5%;
+    margin-left: 5%;
 }
 .banner.bannerLeft .banner-text{
     margin-left: 5%;
+    margin-right: 15%;
 }
-
+.banner.bannerLeft .banner-text h6{
+    margin-right: auto;
+    text-align: right;
+}
+.banner.banner.bannerRight .banner-text h6{
+    margin-left: auto;
+}
 .banner.bannerRight .banner-text h3,
 .banner.bannerRight .banner-text p{
     margin-left: auto !important;
@@ -264,13 +271,15 @@ header .nav3 ul li:not(:last-child)::after {
 .banner .banner-text h3 span{
     font-family: qatarBoldFont;
     color: #000;
-    font-size: 35px;
+    font-size: 34px;
     width: 85%;
     line-height: 40px;
     margin-bottom: 20px;
+    text-align: right;
 }
 .banner .banner-text h6{
     color: #898989;
+    width: 85%;
 }
 .banner.bannerRight .banner-text .line{
     border-bottom: 4px solid #ee363d;
